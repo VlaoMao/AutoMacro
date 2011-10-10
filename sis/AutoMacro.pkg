@@ -2,14 +2,14 @@
 %{"SQR"}
 :"SQR aka Vladislav"
 [0x101F7961], 0, 0, 0, {"Series60ProductID"}
-"/home/vl/symbian-sdks/s60_30mr/epoc32/release/gcce/urel/AutoMacro.exe" -"!:\sys\bin\AutoMacro.exe"
-"/home/vl/symbian-sdks/s60_30mr/epoc32/data/z/private/10003a3f/import/apps/AutoMacro_reg.rsc" -"!:\private\10003a3f\import\apps\AutoMacro_reg.rsc"
-"/home/vl/symbian-sdks/s60_30mr/epoc32/data/z/resource/apps/AutoMacro.r01" -"!:\resource\apps\AutoMacro.rsc"
-"/home/vl/symbian-sdks/s60_30mr/epoc32/data/z/resource/apps/AutoMacro.mif" -"!:\resource\apps\AutoMacro.mif"
-"/home/vl/workspace/AutoMacro/sis/Readme.txt" -"C:\System\AutoMacro\Readme.txt"
-"/home/vl/workspace/AutoMacro/sis/text.txt" -"", FT, TA
-"/home/vl/workspace/AutoMacro/sis/Readme.txt" -"", FT, TA
+"$(EPOCROOT)epoc32/release/gcce/urel/AutoMacro.exe" -"!:\sys\bin\AutoMacro.exe"
+"$(EPOCROOT)epoc32/data/z/private/10003a3f/import/apps/AutoMacro_reg.rsc" -"!:\private\10003a3f\import\apps\AutoMacro_reg.rsc"
+"$(EPOCROOT)epoc32/data/z/resource/apps/AutoMacro.r01" -"!:\resource\apps\AutoMacro.rsc"
+"$(EPOCROOT)epoc32/data/z/resource/apps/AutoMacro.mif" -"!:\resource\apps\AutoMacro.mif"
+"$(WORKSPACE_LOC)AutoMacro/sis/Readme.txt" -"C:\System\AutoMacro\Readme.txt"
+"$(WORKSPACE_LOC)AutoMacro/sis/text.txt" -"", FT, TA
+"$(WORKSPACE_LOC)AutoMacro/sis/Readme.txt" -"", FT, TA
 if exists("C:\System\AutoMacro\MacroMain.cfg")
 	else
-		"/home/vl/workspace/AutoMacro/sis/MacroMain.cfg" -"C:\System\AutoMacro\MacroMain.cfg"
+		"$(WORKSPACE_LOC)AutoMacro/sis/MacroMain.cfg" -"C:\System\AutoMacro\MacroMain.cfg"
 endif

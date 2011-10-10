@@ -46,6 +46,7 @@ pkgfile2ndEd="<your S60v2 pkg file>.pkg" #skip this if you're not building for 2
 
 export PATH=/home/vl/gnupoc:${PATH}
 export EPOCROOT=/home/vl/symbian-sdks/$sdk/
+export WORKSPACE_LOC=/home/vl/workspace/
 export PLATFORM=${PLATFORM}
 export TARGET=${TARGET}
 
