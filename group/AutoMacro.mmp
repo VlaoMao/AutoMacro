@@ -1,0 +1,50 @@
+/*
+============================================================================
+ Name		: AutoMacro.mmp
+ Author	  : SQR
+ Copyright   : Your copyright notice
+ Description : This is the project specification file for AutoMacro.
+============================================================================
+*/
+
+TARGET		  AutoMacro.exe
+TARGETTYPE	  exe
+UID			 0 0xE852824E
+
+MACRO __DEBUG __DEBUG=1
+MACRO __DEBUG_MACROS__=1
+//MACRO __ALLCAPS __ALLCAPS=1
+
+SYSTEMINCLUDE   \epoc32\include
+USERINCLUDE ..\inc ..\inc\functions ..\src\functions\copy
+SOURCEPATH ..\src
+SOURCE MacroMain.cpp array_functions.cpp MainClass.cpp
+
+SOURCEPATH ..\src\functions
+SOURCE copy.cpp killprocess.cpp priority.cpp startprocess.cpp
+SOURCE dirfiles.cpp wait.cpp
+SOURCE note.cpp openfile.cpp vibra.cpp keylock.cpp simulatekey.cpp
+
+SOURCEPATH ..\rss
+START RESOURCE AutoMacro_reg.rss
+	TARGET AutoMacro_reg.rsc
+	TARGETPATH private\10003a3f\import\apps
+END
+START RESOURCE AutoMacro.rss
+	TARGET AutoMacro.rsc
+	TARGETPATH resource\apps
+	LANG 01 16
+END
+START RESOURCE E852824E.rss
+END
+LIBRARY euser.lib
+LIBRARY efsrv.lib
+LIBRARY bafl.lib ws32.lib
+LIBRARY apparc.lib apgrfx.lib apmime.lib
+LIBRARY hwrmvibraclient.lib
+LIBRARY avkon.lib
+LIBRARY eikcore.lib
+LIBRARY flogger.lib
+LIBRARY aknnotify.lib commonui.lib
+LIBRARY eikcore.lib cone.lib //CEikEnv
+CAPABILITY ALL -DRM -TCB

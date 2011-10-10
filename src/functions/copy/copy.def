@@ -1,0 +1,5 @@
+EXPORTS
+	_Z8NewCCopyv @ 1 NONAME ; CODE
+	_ZTI5CCopy @ 2 NONAME ; DATA
+	_ZTV5CCopy @ 3 NONAME ; DATA
+

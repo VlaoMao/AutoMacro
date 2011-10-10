@@ -1,0 +1,19 @@
+target        copy.dll
+targettype    dll
+uid           0x10004262 0x10004264
+
+sourcepath    .
+source        copy.cpp
+
+userinclude   .
+userinclude   ..\..\..\inc
+systeminclude \epoc32\include
+
+library       euser.lib efsrv.lib bafl.lib
+capability ALL -DRM -TCB
+#if defined(wins)
+    deffile ./copy.def
+#else if defined(arm)
+    deffile ./copy.def
+#endif
+nostrictdef

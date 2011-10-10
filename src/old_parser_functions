@@ -1,0 +1,91 @@
+			/*if(aMacroName==KMacroCopy)
+				{
+			ParseCopy(aMacroParameter);
+				}
+			if(aMacroName==KMacroStart)
+				{
+				if(aMacroParameter.Left(2)==_L("0x"))
+					{
+				aMacroParameter.Delete(0,2);
+				lex.Assign(aMacroParameter);
+				TUint KTestUid;
+				lex.Val(KTestUid,EHex);
+				TUid testUid;
+				testUid.iUid=KTestUid;
+				StartProcessUid(testUid);
+					}
+				else
+					{
+				StartProcessName(aMacroParameter);
+					}
+				}
+			if(aMacroName==KMacroKill)
+				{
+			KillProcess(aMacroParameter);
+				}
+			if(aMacroName==KMacroWait)
+				{
+			lex.Assign(aMacroParameter);
+			TInt waiting;
+			lex.Val(waiting);
+			Wait(waiting);
+				}
+			if(aMacroName==KMacroKey)
+				{
+			lex.Assign(aMacroParameter);
+			TInt aScanCode;
+			lex.Val(aScanCode);
+			SimulateKeyEvent(aScanCode);
+				}
+			if(aMacroName==KMacroKeyNew)
+				{
+					lex.Assign(aMacroParameter);
+					TInt aScanCode;
+					lex.Val(aScanCode);
+					SimulateKeyEventNew(aScanCode);
+				}
+			if(aMacroName==KMacroLongKey)
+			{
+				SimulateLongKey(aMacroParameter);
+			}
+			if(aMacroName==KMacroNote)
+				{
+			ShowNoteL(aMacroParameter);
+				}
+			if(aMacroName==KMacroDelFiles)
+				{
+				FileDelete(aMacroParameter);
+				}
+			if(aMacroName==KMacroDelDirs)
+				{
+				DirsDelete(aMacroParameter);
+				}
+			if(aMacroName==KMacroOpen)
+				{
+				OpenFile(aMacroParameter);
+				}
+			if(aMacroName==KMacroVibra)
+				{
+				VibratE(aMacroParameter);
+				}
+			if(aMacroName==KMacroKeyLock)
+			{
+				lex.Assign(aMacroParameter);
+				TInt state;
+				lex.Val(state);
+				KeyLock(state);
+			}
+			if(aMacroName == KSendKey)
+			    {
+			if(aMacroParameter.Left(2)==_L("0x"))
+			    aMacroParameter.Delete(0,2);
+			    SendKey(aMacroParameter);
+			    }
+			if(aMacroName == KRename)
+			    {
+			    Rename(aMacroParameter);
+			    }
+			if(aMacroName == KMkDir)
+			    {
+			    MkDir(aMacroParameter);
+			    }*/
