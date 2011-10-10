@@ -1,2 +1,9 @@
 Инструкция по сборке проекта:
-Пользователи Windows
+Пользователи Windows:
+Точно не уверен, удастся ли сходу собрать, но попробовать-то можно, да?
+Для сборки необходимы переменные EPOCROOT и WORKSPACE_LOC
+В папке с распакованным проектом нужно выполнить bldmake bldfiles и abld build gcce urel
+Пользователи Linux:
+Для сборки необходимы установленные переменные EPOCROOT и WORKSPACE_LOC
+Переходим в папку AutoMacro/group и в файле mysismakelist правим переменные PATH и EPOCROOT,
+затем просто выполняем ./mysismakelist all или clean
