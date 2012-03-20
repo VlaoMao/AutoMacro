@@ -29,6 +29,7 @@ TBuf<256> ConfLogName(_L("log_Main.txt"));
 #include "killprocess.h"
 #include "priority.h"
 #include "dirfiles.h"
+#include "play.h"
 #include "array_functions.h"
 
 
@@ -183,6 +184,9 @@ LOCAL_C void Work(const TDesC& aConfigName)
 								case EFuncInclude:
 									Work(aMacroParameter);
 									break;
+                                case EFuncPlay:
+                                    PlayFile(aMacroParameter);
+                                    break;
 								default:
 __LOGSTR1("Undefined function: %S",&aMacroName);
 									break;

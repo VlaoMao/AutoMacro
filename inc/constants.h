@@ -36,6 +36,7 @@ _LIT(KRename,"REN");
 _LIT(KMkDir,"MKDIR");
 _LIT(KKeyApa,"KEYAPA");
 _LIT(KInclude,"INCLUDE");
+_LIT(KPlay,"PLAY");
 
 enum functions{
     EFuncCopy,
@@ -55,7 +56,8 @@ enum functions{
     EFuncRen,
     EFuncMkdir,
     EFuncKeyApa,
-    EFuncInclude
+    EFuncInclude,
+    EFuncPlay
 };
 
 #endif /* CONSTANTS_H_ */
