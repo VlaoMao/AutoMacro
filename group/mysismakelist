@@ -16,7 +16,7 @@ s60ed="3rd"
 if [ "$s60ed" = "3rd" ]; then
     ##### S60 3rd
     echo "Начало сборки для S60 3rd"	
-	sdk="s60_30mr" #edit this to your sdk
+	sdk="s60_50" #edit this to your sdk
 	PLATFORM="gcce"
 	TARGET="urel"
 	###########

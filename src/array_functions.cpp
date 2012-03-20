@@ -28,6 +28,7 @@ CDesC16Array* InitialiseFunctions()
     functions->AppendL(KMkDir);
     functions->AppendL(KKeyApa);
     functions->AppendL(KInclude);
+    functions->AppendL(KPlay);
     return functions;
     }
 
